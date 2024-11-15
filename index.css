@@ -1,0 +1,420 @@
+/* universal properties */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* background-color: aquamarine; */
+}
+body{
+    overflow-x: hidden;
+}
+#container-1{
+    width: 100vw;
+    height: 90vh;
+}
+/* first page properties */
+#firstpage{
+    width: 100%;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: green; */
+}
+#header1{
+    width: 100%;
+    height: 10%;
+    /* background-color: pink; */
+    position: relative;
+}
+#logoimg{
+    width:30%;
+    height:100%;
+    margin-right: 5%;
+    /* margin-top: 0.25%; */
+    /* background-color: 'red'; */
+}
+#logotext{
+    position: absolute;
+    margin-left: 10%;
+    /* padding-left: 5%; */
+    height: 90%;
+    width: 20%;
+    /* background-color: blue; */
+    font-size: 200%;
+    top: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#header-content{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    margin-left: 58%;
+    /* background-color: yellow; */
+    display: flex;
+}
+.header-content-element{
+    margin: 1%;
+    justify-content: center;
+    height: 80%;
+    width: 30%;
+    /* font-size: 100%; */
+    padding-top: 2%;
+    text-align: center;
+    font-size: 120%;
+    /* background-color: aqua; */
+    border-radius: 5px;
+}
+.header-content-element:hover{
+    color: rgb(247, 176, 44);
+    cursor: pointer;
+}
+#booking{
+    background-color: rgb(247, 176, 44);
+    color: white;
+    padding-top: 2.4%;
+}
+#booktaxi:hover{
+    background: rgb(73, 72, 72);
+    cursor: pointer;
+}
+
+#image1{
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: 100% 100%;
+    /* background-repeat: no-repeat; */
+    /* opacity: 70%; */
+    filter: brightness(35%);
+}
+#welcometext{
+    margin-left: 20%;
+    position: absolute;
+    top: 40%;
+    color: white;
+}
+#booknow{
+    cursor: pointer;
+    margin-top: 2%;
+    color: white;
+    width: 15%;
+    height: 100%;
+    padding: 1.5%;
+    font-size: 100%;
+    /* background: rgb(255,165,0);
+    background: radial-gradient(circle, rgba(255,165,0,1) 50%, rgba(255,255,0,0.9585084033613446) 94%); */
+    background-color: rgb(247, 176, 44);
+    border-radius: 5px;
+}
+#booknow:hover{
+    background: rgb(73, 72, 72);
+}
+
+.container-2{
+    width: 100vw;
+    height: 60vh;
+    /* background-color: aqua; */
+    margin-top: 8%;
+}
+.our-services-1{
+    width: 100%;
+    height: 7%;
+    font-size: 250%;
+    font-weight: bolder;
+    color: rgb(247, 176, 44);
+    text-align: center;
+    /* background-color: red; */
+    margin-bottom: 1%;
+}
+.our-services-2{
+    width: 100%;
+    height: 5%;
+    font-size: 120%;
+    color: black;
+    text-align: center;
+    /* background-color: green; */
+}
+.taxi-package-service{
+    width: 70%;
+    height: 60%;
+    /* background-color: rgb(237, 224, 224); */
+    margin-left: 15%;
+    margin-top: 3%;
+    display: flex;
+}
+.common-taxi-package-service-properties{
+    text-align: center;
+    width: 33%;
+    height: 100%;
+    justify-content: center;
+    /* background-color: blue; */
+    margin: 1%;
+    margin-bottom: 5%;
+}
+.text-1{
+    margin-top: 2%;
+    color:rgb(247, 176, 44);
+    font-size: 150%;  
+    font-weight: bolder; 
+    margin-bottom: 10%;
+}
+.text-2{
+    margin-top: 3%;
+    color:gray;
+    font-size: 120%;
+}
+#container-3{
+    background-color: rgb(234, 226, 226);
+    height: 180vh;
+    margin-bottom: -4%;
+}
+#our-vehicle-1{
+    padding-top: 4%;
+    padding-bottom: 2.2%;
+}
+#car-details{
+    flex-wrap: wrap;
+}
+.common-car-details{
+    width: 30%;
+    height: 60%;
+}
+
+.our-vehicle-content{
+    color: black;
+    width: 100%;
+    height: 8%;
+    /* background-color: aqua; */
+    margin-bottom: 3%;
+    padding: 3%;
+}
+.content-1{
+    font-size: 120%;
+    /* background-color: pink; */
+    padding:2% 1% 2% 1%;
+    margin: 0.5%;
+    border-radius: 5px;
+}
+.booknow-2{
+    width: 40%;
+    height: 8%;
+    color: white;
+    font-size: 120%;
+    background-color: rgb(247, 176, 44);
+    border-radius: 5px;
+    border: none;
+}
+.booknow-2:hover{
+    background: rgb(73, 72, 72);
+    cursor: pointer;
+}
+.content-1:hover{
+    background-color: rgb(247, 176, 44);
+}
+
+#container-4{
+    height: 135vh;
+    /* background-color: aqua; */
+}
+#our-gallery-1{
+    height: 4%;
+}
+#gallery-pic-1{
+    height: 33%;
+    /* margin-bottom:-30%; */
+}
+#gallery-pic-3{
+    height: 29%;
+}
+#gallery-pic-4{
+    height: 65%;
+    margin-top: -15%;
+}
+#gallery-pic-5{
+    height: 32%;
+    margin-top: 5%;
+}
+#gallery-pic-6{
+    height: 65%;
+    margin-top: -18%;
+}
+#container-5{
+    background-color:rgb(234, 226, 226);
+    padding-top: 3%;
+    height: 65vh;
+    margin-top: 0%;
+    
+}
+#testimonials{
+    margin-bottom: 2%;
+}
+#reviews{
+    height: 50%;
+    width: 76%;
+    /* background-color: aqua; */
+    text-align: center;
+    margin-left: 11%;
+    margin-top: 5%;
+    /* margin-top: 3%; */
+    color:rgb(60, 60, 60);
+    font-size: 120%;
+}
+#reviewer{
+    width: 8%;
+    height: 45%;
+    border-radius: 50%;
+    margin-left: 45%;
+    background-image: url("https://zrtechsolutions.com/demo/html/taxionline/assets/images/clients/testimonial-3.jpg");
+    background-size: cover;
+    margin-bottom: 0.5%;
+    border: solid black 1px;
+}
+#container-6{
+    height: 70%;
+}
+#blogs{
+    margin-top: -4%;
+    margin-bottom: 1%;
+}
+.blog-ques{
+    color: rgb(95, 92, 92);
+    margin-top: 5%;
+}
+#container-7{
+    background-color: rgb(247, 176, 44);
+    padding-top: 5%;
+    height: 70vh;
+    text-align: center;
+    color: white;
+}
+#driver-logo{
+    width: 10%;
+    height: 33%;
+    border-radius: 50%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjkBbyIsv85XjPOSIDbc5SAb-xnsbE7ECazA&s");
+    background-size: cover;
+    border: solid black 1px;    
+    margin-left:43%;
+}
+#driver-logo-text{
+    width: 60%;
+    height: 20%;
+    /* background-color: aqua; */
+    margin: 2% 0% 0% 18%;
+}
+#booknow-3{
+    width: 10.5%;
+    height: 9%;
+    border: solid black 1px;
+    margin: 2% 0% 0% -4%;
+    font-size: 100%;
+    color: white;
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+#booknow-3:hover{
+    background-color: rgb(73, 72, 72);
+}
+#contact-us{
+    width: 100vw;
+    height: 120vh;
+    padding-top: 5%;
+    padding-left: 15%;
+}
+#company-logos{
+
+    display: flex;
+    width: 90%;
+    height: 12%;
+    /* background-color: aqua; */
+}
+.logo{
+    justify-content: center;
+    width: 15%;
+    height: 100%;
+    border-radius: 5px;
+    border: solid 1px rgb(247, 176, 44);
+    margin-right: 3%;
+    padding: 1%;
+}
+#contact-us-text-1{
+    /* background-color: aqua; */
+    margin-top: 5%;
+    width: 80%;
+}
+#contact-us-text-2{
+    width: 80%;
+    /* background-color: rgb(50, 74, 95); */
+    margin-top: -1%;
+}
+#name{
+    width: 40%;
+    padding: 1%;
+    border: solid rgb(247, 176, 44) 2px ;
+    margin: 0% 1% 3% 0%;
+    border-radius: 3px;
+    font-size: 100%;
+}
+#email{
+    width: 40%;
+    padding: 1%;
+    border: solid rgb(247, 176, 44) 2px ;
+    margin: 0% 1% 3% 0%;
+    border-radius: 3px;
+    font-size: 100%;
+}
+
+#subject{
+    width: 81%;
+    padding: 1%;
+    border: solid rgb(247, 176, 44) 2px ;
+    margin: 0% 1% 3% 0%;
+    border-radius: 3px;
+    font-size: 100%;
+}
+#message{
+    width: 81%;
+    padding: 1%;
+    border: solid rgb(247, 176, 44) 2px ;
+    margin: 0% 1% 3% 0%;
+    border-radius: 3px;
+    font-size: 130%;
+}
+#send-message{
+    width: 10%;
+    height: 6%;
+    background-color:rgb(247, 176, 44);
+    color: white;
+    border: none;
+    border-radius: 5%;
+    font-size: 100%;
+    cursor: pointer;
+}
+#footer{
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    padding: 2% 0% 2% 15%;
+    
+}
+#details{
+    width: 100%;
+    height: 80%;
+    /* background-color: aqua; */
+    display: flex;
+    /* padding-left: 8%; */
+}
+.common-details{
+    width: 30%;
+    /* text-align: center; */
+    padding-top:5%;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    margin-right: 8%;
+    /* background-color: blueviolet; */
+}
