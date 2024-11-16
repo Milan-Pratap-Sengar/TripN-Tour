@@ -5,12 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trip'NTour</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="ref.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
+    <!-- login page -->
+        <div id="login-page" class="login-container">
+            <h1 class="login-heading">TripN'Tour</h1>
+            <div class="login-selection">
+                <button id="adminLoginBtn" class="toggle-button active">Admin Login</button>
+                <button id="managerLoginBtn" class="toggle-button">Manager Login</button>
+            </div>
+            
+            <!-- Admin Login Form -->
+            <div class="login-form-container show" id="adminLogin">
+                <form id="adminLoginForm">
+                    <label for="adminUsername">Username</label>
+                    <input type="text" id="adminUsername" required class="input-field" placeholder="Enter admin username">
+                    
+                    <label for="adminPassword">Password</label>
+                    <input type="password" id="adminPassword" required class="input-field" placeholder="Enter admin password">
+                    <button type="submit" class="login-button">Login as Admin</button>
+                    <button id="back" type="button">⮌</button>
+                    <div>Not a member Yet? <a href="" style="text-decoration: none;">Sign in</a></div>
+                </form>
+            </div>
+            
+            <!-- Manager Login Form -->
+            <div class="login-form-container hidden" id="managerLogin">
+                <form id="managerLoginForm">
+                    <label for="managerUsername">Username</label>
+                    <input type="text" id="managerUsername" required class="input-field" placeholder="Enter manager username">
+                    
+                    <label for="managerPassword">Password</label>
+                    <input type="password" id="managerPassword" required class="input-field" placeholder="Enter manager password">
+                    
+                    <button type="submit" class="login-button">Login as Manager</button>
+                    <button id="back" type="button">⮌</button>
+                    <div>Not a member Yet? <a href="" style="text-decoration: none;">Sign in</a></div>
+                </form>
+            </div>
+        </div>
+
+
+
     <!-- PAGE 1 -->
 
+
+    <div id="entire-website">
      <div id="container-1">  <!-- full website container-->
         <div id="firstpage"> 
             <div id="header1">
@@ -27,7 +70,7 @@
                     <a href="#container-5" class="header-content-element">Testimonials</a>
                     <a href="#container-7" class="header-content-element" id="booking">Booking</a>
                     <a href="#contact-us-text-1" class="header-content-element">Call Us</a>
-                    <span class="header-content-element">Login/Sign up</span>
+                    <span id="login" class="header-content-element">Login/Sign up</span>
                 </span>
             </div>
 
@@ -280,5 +323,7 @@
         </div>
         <div style="margin-top: 2%;">TripN'Tour © 2024 - Designed by XYZ</div>
      </div>
+    </div>
+    <script src="ref.js"></script>
 </body>
 </html>
