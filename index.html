@@ -14,46 +14,104 @@
         <div id="login-page" class="login-container">
             <h1 class="login-heading">TripN'Tour</h1>
             <div class="login-selection">
-                <button id="adminLoginBtn" class="toggle-button active">Admin Login</button>
-                <button id="managerLoginBtn" class="toggle-button">Manager Login</button>
+                <button id="OwnerLoginBtn" class="toggle-button active">Owner Login</button>
+                <button id="PassangerLoginBtn" class="toggle-button">Passanger Login</button>
             </div>
             
-            <!-- Admin Login Form -->
-            <div class="login-form-container show" id="adminLogin">
-                <form id="adminLoginForm">
-                    <label for="adminUsername">Username</label>
-                    <input type="text" id="adminUsername" required class="input-field" placeholder="Enter admin username">
+            <!-- Owner Login Form -->
+            <div class="login-form-container show" id="OwnerLogin">
+                <form id="OwnerLoginForm" class="login-form">
+                    <label for="OwnerUsername">Username</label>
+                    <input type="text" id="OwnerUsername" required class="input-field" placeholder="Enter Owner username">
                     
-                    <label for="adminPassword">Password</label>
-                    <input type="password" id="adminPassword" required class="input-field" placeholder="Enter admin password">
-                    <button type="submit" class="login-button">Login as Admin</button>
-                    <button id="back" type="button">⮌</button>
-                    <div>Not a member Yet? <a href="" style="text-decoration: none;">Sign in</a></div>
+                    <label for="OwnerPassword">Password</label>
+                    <input type="password" id="OwnerPassword" required class="input-field" placeholder="Enter Owner password">
+                    <div style="width: 100%; text-align: end;">
+                         <a style="text-decoration: none;" href="">Forgot password?</a> 
+                    </div>
+                    <button type="submit" class="login-button">Login as Owner</button>
+                    <button id="back1" class="back" type="button">⮌</button>
+                    <div >Don't have an account? <a id="owner-signup-link" href="#" style="text-decoration: none;">Sign up</a></div>
                 </form>
             </div>
-            
-            <!-- Manager Login Form -->
-            <div class="login-form-container hidden" id="managerLogin">
-                <form id="managerLoginForm">
-                    <label for="managerUsername">Username</label>
-                    <input type="text" id="managerUsername" required class="input-field" placeholder="Enter manager username">
+            <!-- Passanger Login Form -->
+            <div  class="login-form-container" id="PassangerLogin">
+                <form id="PassangerLoginForm">
+                    <label for="PassangerUsername">Username</label>
+                    <input type="text" id="PassangerUsername" required class="input-field" placeholder="Enter Passanger username">
                     
-                    <label for="managerPassword">Password</label>
-                    <input type="password" id="managerPassword" required class="input-field" placeholder="Enter manager password">
-                    
-                    <button type="submit" class="login-button">Login as Manager</button>
-                    <button id="back" type="button">⮌</button>
-                    <div>Not a member Yet? <a href="" style="text-decoration: none;">Sign in</a></div>
+                    <label for="PassangerPassword">Password</label>
+                    <input type="password" id="PassangerPassword" required class="input-field" placeholder="Enter Passanger password">
+                    <div style="width: 100%; text-align: end;">
+                        <a style="text-decoration: none;" href="">Forgot password?</a> 
+                   </div>
+                    <button type="submit" class="login-button">Login as Passanger</button>
+                    <button id="back2" class="back" type="button">⮌</button>
+                    <div >Don't have an account? <a id="passanger-signup-link" href="#" style="text-decoration: none;">Sign up</a></div>
                 </form>
             </div>
         </div>
 
 
 
+        <!-- sign up page -->
+         
+
+            <div id="signup-page" class="login-container">
+                <h1 class="login-heading">TripN'Tour</h1>
+                <div class="login-selection">
+                    <button id="OwnerSignupBtn" class="toggle-button active">Owner Sign up</button>
+                    <button id="PassangerSignupBtn" class="toggle-button">Passanger Sign up</button>
+                </div>
+            
+                <!-- Owner signup Form -->
+                <div class="login-form-container show" id="OwnerSignup">
+                    <form id="OwnerSignupForm">
+                        <input type="text" required class="input-field" placeholder="First Name">
+
+                        <input type="text" required class="input-field" placeholder="Last Name">
+
+                        <input type="email" required class="input-field" placeholder="Email">
+
+                        <input type="tel" pattern="[0-9]{10}" required class="input-field" placeholder="Contact No">
+                        
+                        <input type="password" required class="input-field" placeholder="Password">
+
+                        <input type="password" required class="input-field" placeholder="Confirm Password">
+
+                        <button type="submit" class="login-button">Sign up as Owner</button>
+                        <button id="back3" class="back" type="button">⮌</button>
+                        <div>Already have an account? <a id="owner-login-link" href="" style="text-decoration: none;">Log in</a></div>
+                    </form>
+                </div>
+                <!-- Passanger signup Form -->
+                <div  class="login-form-container" id="PassangerSignup">
+                    <form id="PassangerSignupForm">
+                        <input type="text" required class="input-field" placeholder="First Name">
+
+                        <input type="text" required class="input-field" placeholder="Last Name">
+
+                        <input type="email" required class="input-field" placeholder="Email">
+
+                        <input type="tel" pattern="[0-9]{10}" required class="input-field" placeholder="Contact No">
+
+                        <input type="password" required class="input-field" placeholder="Password">
+                        
+                        <input type="password" required class="input-field" placeholder="Confirm Password">
+
+                        
+                        <button type="submit" class="login-button">Sign up as Passanger</button>
+                        <button id="back4" class="back" type="button">⮌</button>
+                        <div>Already have an account? <a id="passanger-login-link" href="" style="text-decoration: none;">Log in</a></div>
+                    </form>
+                </div>
+            </div>
+
+
     <!-- PAGE 1 -->
 
 
-    <div id="entire-website">
+    <div id="entire-website" >
      <div id="container-1">  <!-- full website container-->
         <div id="firstpage"> 
             <div id="header1">
@@ -68,7 +126,7 @@
                     <a href="#container-3" class="header-content-element">Packages</a>
                     <a href="#container-4" class="header-content-element">Gallery</a>
                     <a href="#container-5" class="header-content-element">Testimonials</a>
-                    <a href="#container-7" class="header-content-element" id="booking">Booking</a>
+                    <a href="#container-7" class="header-content-element" id="booking">Booking</a></button> 
                     <a href="#contact-us-text-1" class="header-content-element">Call Us</a>
                     <span id="login" class="header-content-element">Login/Sign up</span>
                 </span>
@@ -110,7 +168,7 @@
         </div>
     </div>
 
-
+    
     <!-- PAGE 3 -->
 
         <!-- The css style of this container and its element is almost same as container 2.So,we will just slightly modifies its properties -->
@@ -302,9 +360,10 @@
             <input id="name" type="text" placeholder="Name" required>
             <input id="email" type="email" placeholder="Email" required>
             <input id="subject" type="text" placeholder="Subject" required>
-            <textarea name="" id="message" placeholder="Message" required rows="8"></textarea>
+            <textarea name="" id="message" placeholder="Message" required rows="8"></textarea> <br>
+            <button type="button" id="send-message">Send Message</button>
         </form>
-        <button type="button" id="send-message">Send Message</button>
+        
      </div>
      
      <!-- Page-9 -->
