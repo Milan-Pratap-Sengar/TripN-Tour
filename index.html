@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trip'NTour</title>
+    <title>Trip'nCourier</title>
     <link rel="stylesheet" href="index.css">
     <!-- <link rel="stylesheet" href="ref.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,7 +12,7 @@
 
     <!-- login page -->
         <div id="login-page" class="login-container">
-            <h1 class="login-heading">TripN'Tour</h1>
+            <h1 class="login-heading"> Trip'nCourier</h1>
             <div class="login-selection">
                 <button id="OwnerLoginBtn" class="toggle-button active">Owner Login</button>
                 <button id="PassangerLoginBtn" class="toggle-button">Passanger Login</button>
@@ -21,8 +21,8 @@
             <!-- Owner Login Form -->
             <div class="login-form-container show" id="OwnerLogin">
                 <form id="OwnerLoginForm" class="login-form">
-                    <label for="OwnerUsername">Username</label>
-                    <input type="text" id="OwnerUsername" required class="input-field" placeholder="Enter Owner username">
+                    <label for="OwnerUsername">Username/ E-mail Id</label>
+                    <input type="text" id="OwnerUsername" required class="input-field" placeholder="Enter Owner username/ E-mail Id">
                     
                     <label for="OwnerPassword">Password</label>
                     <input type="password" id="OwnerPassword" required class="input-field" placeholder="Enter Owner password">
@@ -37,8 +37,8 @@
             <!-- Passanger Login Form -->
             <div  class="login-form-container" id="PassangerLogin">
                 <form id="PassangerLoginForm">
-                    <label for="PassangerUsername">Username</label>
-                    <input type="text" id="PassangerUsername" required class="input-field" placeholder="Enter Passanger username">
+                    <label for="PassangerUsername">Username/ E-mail Id</label>
+                    <input type="text" id="PassangerUsername" required class="input-field" placeholder="Enter Passanger username/ E-mail Id">
                     
                     <label for="PassangerPassword">Password</label>
                     <input type="password" id="PassangerPassword" required class="input-field" placeholder="Enter Passanger password">
@@ -57,8 +57,9 @@
         <!-- sign up page -->
          
 
+
             <div id="signup-page" class="login-container">
-                <h1 class="login-heading">TripN'Tour</h1>
+                <h1 class="login-heading"> Trip'nCourier</h1>
                 <div class="login-selection">
                     <button id="OwnerSignupBtn" class="toggle-button active">Owner Sign up</button>
                     <button id="PassangerSignupBtn" class="toggle-button">Passanger Sign up</button>
@@ -81,7 +82,7 @@
 
                         <button type="submit" class="login-button">Sign up as Owner</button>
                         <button id="back3" class="back" type="button">⮌</button>
-                        <div>Already have an account? <a id="owner-login-link" href="" style="text-decoration: none;">Log in</a></div>
+                        <div>Already have an account? <a id="owner-login-link" href="#" style="text-decoration: none;">Log in</a></div>
                     </form>
                 </div>
                 <!-- Passanger signup Form -->
@@ -102,13 +103,28 @@
                         
                         <button type="submit" class="login-button">Sign up as Passanger</button>
                         <button id="back4" class="back" type="button">⮌</button>
-                        <div>Already have an account? <a id="passanger-login-link" href="" style="text-decoration: none;">Log in</a></div>
+                        <div>Already have an account? <a id="passanger-login-link" href="#" style="text-decoration: none;">Log in</a></div>
                     </form>
                 </div>
             </div>
 
 
+            <!-- Location-access page -->
+            <div id="location-background-div"><img  id="background-img" src="https://images.unsplash.com/photo-1595206133361-b1fe343e5e23?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+            <div id="location-container">
+                <h1>Use your location</h1>
+                <div id="location-logo"><i class="fa-solid fa-location-dot"></i></div>
+                <div id="location-notification">Give location access so we can choose the right country for your ride,then set your pick-up or drop-off points whenever you want.</div>
+                <button class="location-buttons" type="submit">Allow</button> <br>
+                <button id="denyButton" class="location-buttons" type="submit">Deny</button>
+            </div>
+
+
+
+
+
     <!-- PAGE 1 -->
+
 
 
     <div id="entire-website" >
@@ -119,7 +135,7 @@
                 <span id="logotext">
                     <img id="logoimg" src="https://img.freepik.com/free-vector/checkered-circle-taxi-frame_78370-3172.jpg?t=st=1731580877~exp=1731584477~hmac=64542faef1cd5dc41d5b23cc90f7a9b62f2546ee0330c9cb9f1efc7ffd3a2b29&w=740">
                     <!-- <span </span> -->
-                     <a href="#footer"style="position: absolute; top: 20%; text-decoration: none; color:black">TripN'Tour</a>
+                     <a href="#footer"style="position: absolute; top: 20%; text-decoration: none; color:black"> Trip'nCourier</a>
                 </span>
                 <span id="header-content">
                     <a href="#container-2" class="header-content-element">Services</a>
@@ -143,8 +159,12 @@
             
         </div>
     </div>
+
     
+
     <!-- PAGE 2 -->
+
+
 
     <div class="container-2" id="container-2">
         <div class="our-services-1">Our Services</div>
@@ -169,7 +189,10 @@
     </div>
 
     
+
     <!-- PAGE 3 -->
+
+
 
         <!-- The css style of this container and its element is almost same as container 2.So,we will just slightly modifies its properties -->
     <div class="container-2" id="container-3">
@@ -270,7 +293,10 @@
     </div>
 
 
+    
     <!-- PAGE 4 -->
+
+
 
     <div class="container-2" id="container-4">
         <div  class="our-services-1" id="our-gallery-1">Our Gallery</div>
@@ -298,7 +324,9 @@
     </div>
 
 
+
     <!-- Page 5 -->
+
 
 
     <div class="container-2" id="container-5">
@@ -312,27 +340,35 @@
     </div>
 
 
+
     <!-- Page 6 -->
+
+
+
     <div class="container-2" id="container-6">
         <div class="our-services-1" id="blogs">Our Blog</div>
         <div class="our-services-2">Read our latest news</div>
         <div class="taxi-package-service">
             <div class="common-taxi-package-service-properties">
-                <img src="https://zrtechsolutions.com/demo/html/taxionline/assets/images/news/blog-1.jpg" alt="" width="100%">
+                <img class="blog-zoom" src="https://zrtechsolutions.com/demo/html/taxionline/assets/images/news/blog-1.jpg" alt="" width="100%">
                 <h3 class="blog-ques">Which oil make our car performance better?</h3>
             </div>
             <div class=" common-taxi-package-service-properties">
-                <img src="https://zrtechsolutions.com/demo/html/taxionline/assets/images/news/blog-2.jpg" alt="" width="100%">
+                <img class="blog-zoom" src="https://zrtechsolutions.com/demo/html/taxionline/assets/images/news/blog-2.jpg" alt="" width="100%">
                 <h3 class="blog-ques">How we make our car cool and clean?</h3>
             </div>
             <div class=" common-taxi-package-service-properties">
-                <img src="https://zrtechsolutions.com/demo/html/taxionline/assets/images/news/blog-3.jpg" alt="" width="100%">
+                <img class="blog-zoom" src="https://zrtechsolutions.com/demo/html/taxionline/assets/images/news/blog-3.jpg" alt="" width="100%">
                 <h3 class="blog-ques">After how much time need to change oil filter?</h3>
             </div>
         </div>
     </div>
 
+
+
     <!-- Page-7 -->
+
+
 
     <div class="container-2" id="container-7">
         <div id="driver-logo"></div>
@@ -342,6 +378,8 @@
         </div>
         <button id="booknow-3" type="button">📅Book Now</button>
     </div>
+
+
 
     <!-- Page-8 -->
      <div id="contact-us">
@@ -366,11 +404,15 @@
         
      </div>
      
+
+
      <!-- Page-9 -->
+
+
 
      <div id="footer">
         <div id="details">
-            <div class="common-details"><h2>TripN'Tour</h2> <br>Your Reliable Taxi Service. Ride in Comfort and Convenience with Our Taxi Services. <br><br>
+            <div class="common-details"><h2> Trip'nCourier</h2> <br>Your Reliable Taxi Service. Ride in Comfort and Convenience with Our Taxi Services. <br><br>
                 <span style="margin-right: 3%;"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-64.png" alt=""width="12%" height="17%"></span>
                 <span style="margin-right: 3%;"><img src="https://cdn1.iconfinder.com/data/icons/social-networks-15/512/gogle_network_logo-512.png" alt="" width="12%" height="17%"></span>
                 <span style="margin-right: 1%;"><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-512.png" alt="" width="12%" height="17%"></span>
@@ -380,7 +422,7 @@
             <div class="common-details"><h2>Phone:</h2> <br>☎ +1 123456789 <br>☎ +1 123456790</div>
             <div class="common-details"><h2>Email:</h2> <br>✉ info@example.com <br>✉ email@example.com</div>
         </div>
-        <div style="margin-top: 2%;">TripN'Tour © 2024 - Designed by XYZ</div>
+        <div style="margin-top: 2%;"> Trip'nCourier © 2024 - Designed by XYZ</div>
      </div>
     </div>
     <script src="index.js"></script>
