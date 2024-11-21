@@ -29,7 +29,10 @@
         const passangerLoginLink=document.getElementById("passanger-login-link");
         const locationBgDiv=document.getElementById('location-background-div');
         const locationContainer=document.getElementById('location-container');
-        const denyButton=document.getElementById('denyButton');
+        const locationDeny=document.getElementById('denyButton');
+        const locationAllow=document.getElementById('allowButton');
+        const locationDisplay=document.getElementById('locationResult');
+
 
         // code to toggle between main website and login-page
 
@@ -141,13 +144,14 @@
         });
     
         // // Handle form submissions
+
         document.getElementById('OwnerLoginForm').addEventListener('submit', (event) => {
             event.preventDefault(); 
-            loginPage.style.display="none";
-            document.body.style.backgroundImage="none";
-            locationBgDiv.style.display="block";
-            locationContainer.style.display="block";
-            locationContainer.classList.add('fade-animation');
+                loginPage.style.display="none";
+                document.body.style.backgroundImage="none";
+                locationBgDiv.style.display="block";
+                locationContainer.style.display="block";
+                locationContainer.classList.add('fade-animation');
         });
     
         document.getElementById('PassangerLoginForm').addEventListener('submit', (event) => {
@@ -159,12 +163,49 @@
             locationContainer.classList.add('fade-animation');
         });
 
-        denyButton.addEventListener("click",function(){
+        locationAllow.addEventListener('click',function(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showLocation,errorOccured,{
+                    enableHighAccuracy:true,
+                    timeout:5000,
+                    maximumAge:0,
+                });
+            }
+            else{
+                locationDisplay.innerText="Geolocation is not supported."
+            }
+        });
+
+        function showLocation(pos){
+            const latitude=pos.coords.latitude;
+            const longitude=pos.coords.longitude;
+            locationDisplay.innerText=`Latitude: ${latitude}
+                                        Longitude: ${longitude}`;
+        }
+
+        function errorOccured(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    locationDisplay.innerText = "User denied the request for Geolocation.";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    locationDisplay.innerText = "Location information is unavailable.";
+                    break;
+                case error.TIMEOUT:
+                    locationDisplay.innerText = "The request to get user location timed out.";
+                    break;
+                case error.UNKNOWN_ERROR:
+                    locationDisplay.innerText = "An unknown error occurred.";
+                    break;
+            }
+        }
+
+        locationDeny.addEventListener("click",function(){
             website.style.display="block";
             locationBgDiv.style.display="none";
             locationContainer.style.display="none";
             website.classList.add('fade-animation');
+            locationDisplay.innerText = "";
         });
     });
-
     
