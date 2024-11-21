@@ -22,10 +22,10 @@
             <div class="login-form-container show" id="OwnerLogin">
                 <form id="OwnerLoginForm" class="login-form">
                     <label for="OwnerUsername">Username/ E-mail Id</label>
-                    <input type="text" id="OwnerUsername" required class="input-field" placeholder="Enter Owner username/ E-mail Id">
+                    <input type="text" id="OwnerUsername" oninput=savingUsername() required class="input-field" placeholder="Enter Owner username/ E-mail Id">
                     
                     <label for="OwnerPassword">Password</label>
-                    <input type="password" id="OwnerPassword" required class="input-field" placeholder="Enter Owner password">
+                    <input type="password" id="OwnerPassword" required class="input-field" placeholder="Enter Owner password" >
                     <div style="width: 100%; text-align: end;">
                          <a style="text-decoration: none;" href="">Forgot password?</a> 
                     </div>
@@ -115,8 +115,9 @@
                 <h1>Use your location</h1>
                 <div id="location-logo"><i class="fa-solid fa-location-dot"></i></div>
                 <div id="location-notification">Give location access so we can choose the right country for your ride,then set your pick-up or drop-off points whenever you want.</div>
-                <button class="location-buttons" type="submit">Allow</button> <br>
-                <button id="denyButton" class="location-buttons" type="submit">Deny</button>
+                <button id="allowButton" class="location-buttons" type="submit">Allow</button> <br>
+                <button id="denyButton" class="location-buttons" type="submit">Exit</button>
+                <div id="locationResult"></div>
             </div>
 
 
